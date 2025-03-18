@@ -1,0 +1,31 @@
+
+{
+    "model": {
+        "feature_dimension": 64,
+        "time_dimension": 512,
+        "model_dimension": 64,
+        "projection_dimension": 512,
+        "layer_count": 4,
+        "head_count": 4
+    },
+    "optimizer": {
+        "learn_rate": 0.0001
+    },
+    "training": {
+        "epochs": 20,
+        "batch_size": 16,
+        "buffer_size": 24,
+        "buffer_update_frequency": 2,
+        "val_period": 1000
+
+    },
+    "data": {
+        "database_path": "PATH/TO/music_database.db",
+        "data_split": 0.9
+    },
+    "progress": {
+        "save_period": 5000,
+        "checkpoint_period": 50000,
+        "loss_aggregation_window": 1000
+    }
+}

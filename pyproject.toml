@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spotifai"
+version = "0.0.1"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy~=2.2",
+    "pandas~=2.2",
+    "soundfile~=0.12.1",
+    "tqdm",
+    "requests",
+    "torch",
+    "torchvision",
+    "torchaudio",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["spotifai"]
+namespaces = false
